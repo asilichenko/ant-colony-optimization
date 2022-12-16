@@ -94,12 +94,12 @@ public class AntColonyMain {
     private static void sample26() {
         search(SAMPLE_26,
                 new Config(
-                        1000,
-                        1000,
+                        200,
+                        200,
 
-                        1.6,
-                        0.4,
-                        0.006
+                        1,
+                        1,
+                        0.9
                 )
         );
     }
@@ -120,11 +120,13 @@ public class AntColonyMain {
         final String pheromoneMtxString = StringUtils.obtainPheromoneLevels(pheromoneMtx);
 
         System.out.println();
-        System.out.println(bestAnt.path() + "\t" + bestAnt.totalCost());
-        System.out.println("Expected: " + sample.expected());
-        System.out.println();
         System.out.println(probabilities);
         System.out.println();
         System.out.println(pheromoneMtxString);
+
+        System.out.println();
+        System.out.println(bestAnt.path() + "\t" + bestAnt.totalCost());
+        System.out.println("Expected: " + sample.expected());
+        System.out.println();
     }
 }

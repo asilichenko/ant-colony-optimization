@@ -19,7 +19,12 @@ public class StringUtils {
     /**
      * Do not print too small values, epsilon is a lower bound.
      */
-    private static final double EPSILON = 1e-8;
+    private static final double EPSILON = 1e-3;
+
+    /**
+     * String format of pheromone values
+     */
+    public static final String PHEROMONE_FORMAT = "%.4f";
 
     /**
      * Calculate final probabilities for all edges of the graph.
@@ -63,7 +68,7 @@ public class StringUtils {
             for (int j = 0; j < line.length; j++) {
                 //
                 final double val = line[j];
-                stringBuilder.append(val < EPSILON ? 0d : val);
+                stringBuilder.append(String.format(PHEROMONE_FORMAT, val < EPSILON ? 0 : val));
                 if (j < line.length - 1) stringBuilder.append(", ");
                 //
             }
