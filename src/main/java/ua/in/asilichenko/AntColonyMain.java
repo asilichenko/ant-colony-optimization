@@ -43,6 +43,7 @@ public class AntColonyMain {
         sample5();
 //        sample6();
 //        sample17();
+//        sample26();
 
         System.out.println(LocalTime.now() + " >>> Finished. Elapsed: " + stopwatch.elapsed());
     }
@@ -78,6 +79,20 @@ public class AntColonyMain {
     @SuppressWarnings("unused")
     private static void sample17() {
         search(SAMPLE_17,
+                new Config(
+                        1000,
+                        1000,
+
+                        1.6,
+                        0.4,
+                        0.006
+                )
+        );
+    }
+
+    @SuppressWarnings("unused")
+    private static void sample26() {
+        search(SAMPLE_26,
                 new Config(
                         1000,
                         1000,
