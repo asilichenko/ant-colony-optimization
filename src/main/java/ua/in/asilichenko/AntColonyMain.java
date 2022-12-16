@@ -1,5 +1,6 @@
 package ua.in.asilichenko;
 
+import com.google.common.base.Stopwatch;
 import ua.in.asilichenko.antcolony.cost.MatrixCostFunction;
 import ua.in.asilichenko.antcolony.domain.Ant;
 import ua.in.asilichenko.antcolony.domain.ArrayPheromoneMatrix;
@@ -37,12 +38,13 @@ public class AntColonyMain {
     @SuppressWarnings("CommentedOutCode")
     public static void main(String[] args) {
         System.out.println(LocalTime.now() + " >>> Started");
+        final Stopwatch stopwatch = Stopwatch.createStarted();
 
         sample5();
 //        sample6();
 //        sample17();
 
-        System.out.println(LocalTime.now() + " >>> Finished.");
+        System.out.println(LocalTime.now() + " >>> Finished. Elapsed: " + stopwatch.elapsed());
     }
 
     @SuppressWarnings("unused")
