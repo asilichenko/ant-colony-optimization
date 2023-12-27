@@ -10,6 +10,10 @@ To see how it works with real data and configuration - launch class AntColonyMai
  <li><a href="http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/tsp/">comopt.ifi.uni-heidelberg.de</a></li>
 </ul>
 
+## Video How Ant Colony Optimization Algorythm Works
+
+[<img src="https://i.ytimg.com/vi/fMCS4srWJ94/maxresdefault.jpg" style="width:300px;">](https://youtu.be/fMCS4srWJ94 "How Ant Colony Optimization Algorythm Works")
+
 ## Authors
 
 - [@asilichenko](https://github.com/asilichenko)
